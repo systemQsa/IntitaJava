@@ -8,7 +8,9 @@ public class Customer {
 
         public Customer(String name,int measurement){
             this.name = name;
+            setSize(measurement);
         }
+
         public double getTotalClothingCost() {
             double total = 0.0;
             for (Clothing item : items) {
@@ -25,19 +27,18 @@ public class Customer {
             return items;
         }
 
-        public String getName() {
-            return name;
-        }
+        public String getName() { return name; }
 
-
+        public void setName(String name) { this.name = name; }
 
         public String getSize() {
             return size;
         }
 
-    public void setSize(String size) {
+        public void setSize(String size) {
         this.size = size;
     }
+
         public  void setSize(int measurement){
             switch (measurement) {
                 case 1:
