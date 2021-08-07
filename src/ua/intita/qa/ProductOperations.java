@@ -21,6 +21,7 @@ public class ProductOperations {
 
      public void listOfProducts(Product[] products,String name,int shelfLife){
          for (Product product: products) {
+             //System.out.println(product.getName());
              if (name.equals(product.getName())){
                  if (product.getShelfLife() > shelfLife){
                      System.out.println(product.toString());
