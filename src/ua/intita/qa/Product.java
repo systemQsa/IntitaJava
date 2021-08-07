@@ -19,8 +19,20 @@ public class Product {
         this.amount = amount;
 
     }
+    /*
+    public Product(int id,String name,long UPC,int shelfLife){
+        this.id = id;
+        this.name = name;
+        this.UPC = UPC;
+        this.shelfLife = shelfLife;
+    }
 
-
+     public Product(String manufacturer,float price,int amount){
+        this.manufacturer = manufacturer;
+        this.price = price;
+        this.amount = amount;
+     }
+     */
 
     public int getId() {
         return id;
