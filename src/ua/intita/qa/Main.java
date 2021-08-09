@@ -19,10 +19,13 @@ public class Main {
             products[4] = new Product("orange",5);
 
 
-            ProductOperations productOperations = new ProductOperations();
-            // productOperations.listOfProducts(products,"avocado");
-            //productOperations.listOfProducts(products,24.3F,"orange");
-            productOperations.listOfProducts(products,"orange",7);
-
+            ProductOperations productOperations = new ProductOperations(products);
+            // productOperations.listOfProducts("avocado");
+            //productOperations.listOfProducts(24.3F,"orange");
+//            productOperations.listOfProducts("orange",7);
+        final Product[] pineapples = productOperations.findListOfProductsByName("pineapple");
+        for (Product pineapple : pineapples) {
+            System.out.println(pineapple);
+        }
     }
 }
