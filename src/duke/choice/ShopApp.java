@@ -1,27 +1,72 @@
 package duke.choice;
 
+import java.util.Arrays;
+
 public class ShopApp {
     public static void main(String[] args) {
 
-        Customer customer = new Customer("Pinky",3);
+        Customer customer = new Customer("Pinky", 3);
 
         customer.setSize("S");
 
-        System.out.println("Hello " + customer.getName());
-        System.out.println("Min price" + " " + Clothing.MINIMUM_PRICE);
+        //System.out.println("Hello " + customer.getName());
+        //System.out.println("Min price" + " " + Clothing.MINIMUM_PRICE);
 
-        Clothing item1 = new Clothing("Blue Jacket",20.9,"M");
-        Clothing item2 = new Clothing("Orange T-Short",10.5,"S");
-        Clothing[] items = {item1, item2, new Clothing("Green Scarf",5,"S"), new Clothing("Blue T-Short",10.5,"S")};
+        Clothing item1 = new Clothing("Blue Jacket", 20.9, "S");
+        Clothing item2 = new Clothing("Orange T-Short", 10.5, "S");
+        Clothing[] items = {item1, item2, new Clothing("Green Scarf", 5, "M"), new Clothing("Blue T-Short", 10.5, "S")};
+        int n = 0;
+        int m = 0;
+        for (Clothing clothing:items) {
+            n = clothing.compareTo(item1);
+            System.out.println(n);
+        }
 
+        Arrays.sort(items);
+
+        Arrays.stream(items).forEach(System.out::println);
+
+        /*
         customer.addItems(items);
         customer.setSize(3);
 
-        for (Clothing clothing:items) {
+        System.out.println("Total: " + customer.getTotalClothingCost());
+        int total = 0;
+        int count = 0;
+        for (Clothing item : items) {
+            if (item.getSize().equals("L")) {
+                total += item.getPrice();
+                count++;
+            }
+        }
+
+        for (Clothing clothing : items) {
             System.out.println(clothing.toString());
         }
-        System.out.println("Total: " + customer.getTotalClothingCost());
+        */
+
+        /*
+        try{
+            System.out.println("Average price = " + total / count);
+        }catch(ArithmeticException e){
+            System.out.println("Error dividing by ZERO!");
+        }finally{
+            System.out.println("FINAL");
+        }
+        System.out.println("Bye");
+
+    }
+
+
+     Gadget gadget1 = new Camera();
+     Gadget gadget2 = new TV();
+     gadget1.on();
+     gadget1.off();
+
+     gadget2.on();
+     gadget2.off();
+     */
+
     }
 }
-
 
