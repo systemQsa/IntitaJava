@@ -13,7 +13,6 @@ public class Present {
 
     public void printSweets() {
         for (Sweets sweet : present) {
-            // System.out.println(sweet);
             //System.out.println(sweet.getWeight());
             //sum += sweet.getWeight();
             setTotalWeight(sweet.getWeight());

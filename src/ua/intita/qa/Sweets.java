@@ -22,15 +22,6 @@ public class Sweets implements Comparable<Sweets> {
     }
 
     @Override
-    public String toString() {
-        return "Sweets{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                ", sugarConsistence=" + sugarConsistence +
-                '}';
-    }
-
-    @Override
     public int compareTo(Sweets o) {
         return this.name.compareTo(o.name);
     }
@@ -57,5 +48,14 @@ public class Sweets implements Comparable<Sweets> {
 
     public void setSugarConsistence(double sugarConsistence) {
         this.sugarConsistence = sugarConsistence;
+    }
+
+    @Override
+    public String toString() {
+        return "Sweets{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", sugarConsistence=" + sugarConsistence +
+                '}';
     }
 }

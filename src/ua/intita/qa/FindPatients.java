@@ -14,6 +14,7 @@ public class FindPatients {
                 count++;
             }
         }
+        // System.out.println(count);
         Patient[] listPatients = new Patient[count];
         count = 0;
         for (Patient patient : patients) {

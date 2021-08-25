@@ -26,13 +26,13 @@ public class Auto {
 
     private class Motor {
         public void refuel() {
-            System.out.println("refuel the motor");
+            System.out.println("refuel the motor for" + brand);
         }
     }
 
     private class Wheel {
         public void changeWheel() {
-            System.out.println("Change a wheel");
+            System.out.println("Change a wheel for" + brand);
         }
     }
 }

@@ -9,18 +9,6 @@ public class Patient {
     private int medicineCardNumber;
     private String diagnosis;
 
-    @Override
-    public String toString() {
-        return "Patient{" +
-                "id=" + id +
-                ", surname='" + surname + '\'' +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phoneNumber=" + phoneNumber +
-                ", medicineCardNumber=" + medicineCardNumber +
-                ", diagnosis='" + diagnosis + '\'' +
-                '}';
-    }
 
     public Patient(String name, String surname, String diagnosis) {
         this.name = name;
@@ -88,5 +76,18 @@ public class Patient {
 
     public void setDiagnosis(String diagnosis) {
         this.diagnosis = diagnosis;
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "id=" + id +
+                ", surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber=" + phoneNumber +
+                ", medicineCardNumber=" + medicineCardNumber +
+                ", diagnosis='" + diagnosis + '\'' +
+                '}';
     }
 }

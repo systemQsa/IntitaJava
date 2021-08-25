@@ -1,6 +1,5 @@
 package ua.intita.qa;
 
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Arrays;
 
 public class Main {
@@ -35,6 +34,7 @@ public class Main {
       //present.printCandySugarConsistence(15.5,24.4);
       */
 
+       /*
         Auto bmw = new Auto();
         bmw.setBrand("bmw");
         Auto toyota = new Auto();
@@ -42,5 +42,7 @@ public class Main {
         Auto mercedes = new Auto();
         mercedes.setBrand("mercedes");
         bmw.printCarBrand();
+
+        */
     }
 }
