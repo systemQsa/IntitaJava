@@ -15,12 +15,6 @@ public class ShopApp {
         Clothing item1 = new Clothing("Blue Jacket", 20.9, "S");
         Clothing item2 = new Clothing("Orange T-Short", 10.5, "S");
         Clothing[] items = {item1, item2, new Clothing("Green Scarf", 5, "M"), new Clothing("Blue T-Short", 10.5, "S")};
-        int n = 0;
-        int m = 0;
-        for (Clothing clothing:items) {
-            n = clothing.compareTo(item1);
-            System.out.println(n);
-        }
 
         Arrays.sort(items);
 
