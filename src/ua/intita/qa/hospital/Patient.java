@@ -1,4 +1,4 @@
-package ua.intita.qa;
+package ua.intita.qa.hospital;
 
 public class Patient {
     private int id;

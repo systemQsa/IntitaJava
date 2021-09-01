@@ -1,4 +1,4 @@
-package ua.intita.qa;
+package ua.intita.qa.hospital;
 
 public class FindPatients {
     private Patient[] patients;

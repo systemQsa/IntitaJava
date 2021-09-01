@@ -1,4 +1,4 @@
-package ua.intita.qa;
+package ua.intita.qa.roshen;
 
 public class Sweets implements Comparable<Sweets> {
     private String name;

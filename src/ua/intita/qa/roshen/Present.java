@@ -1,4 +1,4 @@
-package ua.intita.qa;
+package ua.intita.qa.roshen;
 
 import java.util.Arrays;
 
