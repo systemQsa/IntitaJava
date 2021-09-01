@@ -6,6 +6,10 @@ public class Sweets implements Comparable<Sweets> {
     private double sugarConsistence;
     private Sweets[] sweets;
 
+    public Sweets[] getSweets() {
+        return sweets;
+    }
+
     public Sweets(String name, double weight, double sugarConsistence) {
         this.name = name;
         this.weight = weight;
@@ -52,10 +56,8 @@ public class Sweets implements Comparable<Sweets> {
 
     @Override
     public String toString() {
-        return "Sweets{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                ", sugarConsistence=" + sugarConsistence +
-                '}';
+        return "name='" + name + '\'' +
+                ", weight= " + weight +
+                ", sugarConsistence= " + sugarConsistence;
     }
 }

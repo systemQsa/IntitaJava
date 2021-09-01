@@ -11,13 +11,11 @@ public class Present {
         this.present = present;
     }
 
-    public void printSweets() {
+    public void printTotalWeight() {
         for (Sweets sweet : present) {
-            //System.out.println(sweet.getWeight());
-            //sum += sweet.getWeight();
             setTotalWeight(sweet.getWeight());
         }
-        System.out.println(getTotalWeight());
+        System.out.println("total present weight = " + getTotalWeight());
     }
 
     public double getTotalWeight() {
@@ -40,5 +38,4 @@ public class Present {
             }
         }
     }
-
 }

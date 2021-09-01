@@ -19,4 +19,13 @@ public class Auto {
     public void printBrand() {
         System.out.println(getBrand());
     }
+
+    public void setCarDetails() {
+        motor.refuelMotor();
+        wheel.changeWheel();
+    }
+
+    public void drive() {
+        System.out.println("is driving!");
+    }
 }
